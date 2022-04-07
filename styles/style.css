@@ -1,1 +1,192 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+html {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 62.5%;
+  text-align: center;
+}
+
+body {
+  padding: 2.8rem;
+  background-image: url(../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  padding-block: 1.8rem;
+  letter-spacing: 0.1px;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2.1rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+.copy-200,
+.copy-400,
+.copy-600 {
+  font-size: 1.3rem;
+  color: hsl(201deg, 11%, 66%);
+  letter-spacing: 0.15px;
+  line-height: 1.8rem;
+  padding-block: 1.8rem;
+}
+
+.dl-link {
+  font-family: "Bai Jamjuree", sans-serif;
+  width: 100%;
+  margin: 0.9rem 0rem;
+  padding: 1.5rem;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5.4rem;
+  box-shadow: -10px 10px 20px hsl(201deg, 11%, 66%);
+}
+
+.dl-link-ios {
+  background-color: hsl(171deg, 66%, 44%);
+}
+
+.dl-link-mac {
+  background-color: hsl(233deg, 100%, 69%);
+}
+
+header,
+.snippets,
+.access,
+.workflow,
+.companies,
+.clipboard,
+footer {
+  padding-block: 5rem;
+}
+
+.snippets__img img {
+  width: 100%;
+  padding-block: 1.8rem;
+}
+
+@media (min-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 15rem;
+    background-image: url(../images/bg-header-desktop.png);
+  }
+
+  h1 {
+    font-size: 4.4rem;
+    letter-spacing: 0.15px;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+    letter-spacing: -0.63px;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+    letter-spacing: -0.5px;
+    text-align: left;
+  }
+
+  .copy-200,
+.copy-400,
+.copy-600 {
+    line-height: 30px;
+  }
+
+  .copy-200 {
+    font-size: 1.6rem;
+  }
+
+  .copy-400 {
+    font-size: 1.8rem;
+  }
+
+  .copy-600 {
+    font-size: 2rem;
+  }
+
+  .dl-link {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 3.8rem 0.7rem;
+    padding: 2rem 3rem;
+  }
+
+  header {
+    padding-inline: 22rem;
+    width: 100%;
+  }
+  header img {
+    padding-block: 5.2rem;
+  }
+
+  .snippets__info {
+    display: flex;
+  }
+}/*# sourceMappingURL=style.css.map */

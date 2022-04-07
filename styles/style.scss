@@ -1,0 +1,102 @@
+@import "./reset";
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+$--cl-p-StCyan: hsl(171, 66%, 44%);
+$--cl-p-LiBlue: hsl(233, 100%, 69%);
+$--cl-n-DaGrayishBlue: hsl(210, 10%, 33%);
+$--cl-n-GrayishBlue: hsl(201, 11%, 66%);
+
+$--fs-h-600: 2.4rem;
+$--fs-h-400: 2.1rem;
+$--fs-h-200: 1.8rem;
+$--fs-c-200: 1.3rem;
+
+html {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 62.5%;
+  text-align: center;
+}
+
+body {
+  padding: 2.8rem;
+  background-image: url(../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  padding-block: 1.8rem;
+  letter-spacing: 0.1px;
+}
+
+h1 {
+  font-size: $--fs-h-600;
+}
+
+h2 {
+  font-size: $--fs-h-400;
+}
+h3 {
+  font-size: $--fs-h-200;
+}
+
+.copy-200,
+.copy-400,
+.copy-600 {
+  font-size: $--fs-c-200;
+  color: $--cl-n-GrayishBlue;
+  letter-spacing: 0.15px;
+  line-height: $--fs-h-200;
+  padding-block: 1.8rem;
+}
+
+.dl-link {
+  font-family: "Bai Jamjuree", sans-serif;
+  width: 100%;
+  margin: 0.9rem 0rem;
+  padding: 1.5rem;
+  color: white;
+  font-size: $--fs-h-200;
+  font-weight: 600;
+  border: none;
+  border-radius: calc($--fs-h-200 * 3);
+  box-shadow: -10px 10px 20px $--cl-n-GrayishBlue;
+}
+
+.dl-link-ios {
+  background-color: $--cl-p-StCyan;
+}
+
+.dl-link-mac {
+  background-color: $--cl-p-LiBlue;
+}
+
+header,
+.snippets,
+.access,
+.workflow,
+.companies,
+.clipboard,
+footer {
+  padding-block: 5rem;
+}
+
+.snippets {
+    &__info {
+    }
+    
+    &__img {
+        img {
+            width: 100%;
+            padding-block: $--fs-h-200;
+            // background-color: pink;   
+        }
+    }
+}
+
+
+
+@import "./desktop";

@@ -1,0 +1,70 @@
+@media (min-width: 800px) {
+  $--fs-h-600: 4.4rem;
+  $--fs-h-400: 3.6rem;
+  $--fs-h-200: 2.4rem;
+  $--fs-c-600: 2rem;
+  $--fs-c-400: 1.8rem;
+  $--fs-c-200: 1.6rem;
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 15rem;
+    background-image: url(../images/bg-header-desktop.png);
+  }
+
+  h1 {
+    font-size: $--fs-h-600;
+    letter-spacing: 0.15px;
+  }
+
+  h2 {
+    font-size: $--fs-h-400;
+    letter-spacing: -0.63px;
+  }
+  h3 {
+    font-size: $--fs-h-200;
+    letter-spacing: -0.5px;
+    text-align: left;
+  }
+
+  .copy-200,
+  .copy-400,
+  .copy-600 {
+    line-height: 30px;
+  }
+
+  .copy-200 {
+    font-size: $--fs-c-200;
+  }
+
+  .copy-400 {
+    font-size: $--fs-c-400;
+  }
+
+  .copy-600 {
+    font-size: $--fs-c-600;
+  }
+
+  .dl-link {
+    width: fit-content;
+    margin: 3.8rem 0.7rem;
+    padding: 2rem 3rem;
+  }
+
+  header {
+    padding-inline: 22rem;
+
+    width: 100%;
+    img {
+      padding-block: 5.2rem;
+    }
+  }
+
+  .snippets {
+    &__info {
+      display: flex;
+    }
+  }
+}

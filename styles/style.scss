@@ -6,10 +6,10 @@ $--cl-p-LiBlue: hsl(233, 100%, 69%);
 $--cl-n-DaGrayishBlue: hsl(210, 10%, 33%);
 $--cl-n-GrayishBlue: hsl(201, 11%, 66%);
 
-$--fs-h-600: 2.4rem;
-$--fs-h-400: 2.1rem;
-$--fs-h-200: 1.8rem;
-$--fs-c-200: 1.3rem;
+$--fs-h-600: 3rem;
+$--fs-h-400: 2.5rem;
+$--fs-h-200: 2rem;
+$--fs-c-200: 1.6rem;
 
 html {
   font-family: "Bai Jamjuree", sans-serif;
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  padding: 2.8rem;
+  padding: 3rem;
   background-image: url(../images/bg-header-mobile.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -29,7 +29,7 @@ h2,
 h3 {
   font-weight: 600;
   padding-block: 1.8rem;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.15px;
 }
 
 h1 {
@@ -64,6 +64,7 @@ h3 {
   border: none;
   border-radius: calc($--fs-h-200 * 3);
   box-shadow: -10px 10px 20px $--cl-n-GrayishBlue;
+  cursor: pointer;
 }
 
 .dl-link-ios {
@@ -78,25 +79,97 @@ header,
 .snippets,
 .access,
 .workflow,
-.companies,
 .clipboard,
 footer {
   padding-block: 5rem;
 }
 
 .snippets {
-    &__info {
+  &__img {
+    img {
+      width: 100%;
+      padding-block: $--fs-h-200;
     }
-    
-    &__img {
-        img {
-            width: 100%;
-            padding-block: $--fs-h-200;
-            // background-color: pink;   
-        }
-    }
+  }
 }
 
+.access {
+  img {
+    width: 100%;
+    padding-block: $--fs-h-200;
+  }
+}
 
+.workflow {
+  &__examples {
+    padding-block: $--fs-h-200;
+  }
+  &__example {
+    padding-block: $--fs-h-200;
+  }
+}
+
+.companies {
+  padding-block: $--fs-h-400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 50%;
+    padding-block: $--fs-h-600;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__logo {
+    img {
+      width: 30%;
+      padding-block: $--fs-h-200;
+    }
+  }
+
+  &__nav {
+    li {
+      padding-block: $--fs-h-200;
+      font-size: $--fs-c-200;
+      &:hover {
+        cursor: pointer;
+        color: $--cl-p-StCyan;
+      }
+    }
+  }
+
+  &__social-icons {
+    ul {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      li {
+        i {
+          font-size: $--fs-h-400;
+          width: 10rem;
+          padding-block: $--fs-h-200;
+          cursor: pointer;
+          &:hover {
+            color: $--cl-p-StCyan;
+          }
+        }
+      }
+    }
+  }
+
+  &__attribution {
+    a {
+      text-decoration: none;
+      color: $--cl-p-LiBlue;
+      &:hover {
+        color: $--cl-p-StCyan;
+      }
+    }
+  }
+}
 
 @import "./desktop";

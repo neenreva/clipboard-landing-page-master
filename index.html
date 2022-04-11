@@ -18,7 +18,7 @@
     ></script>
 
     <title>Frontend Mentor | Clipboard landing page</title>
-  </head>                         
+  </head>
   <body>
     <header class="header">
       <img src="/images/logo.svg" alt="Clipboard logo" />
@@ -76,22 +76,28 @@
         We’ve got the tools to boost your productivity.
       </p>
       <div class="workflow__examples">
-        <h3 class="workflow__sub-header">Create blacklists</h3>
-        <img src="/images/icon-blacklist.svg" alt="" />
-        <p class="workflow__sub-header-copy copy-200">
-          Ensure sensitive information never makes its way to your clipboard by
-          excluding certain sources.
-        </p>
-        <h3 class="workflow__sub-header">Plain text snippets</h3>
-        <img src="/images/icon-text.svg" alt="" />
-        <p class="workflow__sub-header-copy copy-200">
-          Remove unwanted formatting from copied text for a consistent look.
-        </p>
-        <h3 class="workflow__sub-header">Sneak preview</h3>
-        <img src="/images/icon-preview.svg" alt="" />
-        <p class="workflow__sub-header-copy copy-200">
-          Quick preview of all snippets on your Clipboard for easy access.
-        </p>
+        <div class="workflow__example">
+          <img src="/images/icon-blacklist.svg" alt="" />
+          <h3 class="workflow__sub-header">Create blacklists</h3>
+          <p class="workflow__sub-header-copy copy-200">
+            Ensure sensitive information never makes its way to your clipboard
+            by excluding certain sources.
+          </p>
+        </div>
+        <div class="workflow__example">
+          <img src="/images/icon-text.svg" alt="" />
+          <h3 class="workflow__sub-header">Plain text snippets</h3>
+          <p class="workflow__sub-header-copy copy-200">
+            Remove unwanted formatting from copied text for a consistent look.
+          </p>
+        </div>
+        <div class="workflow__example">
+          <img src="/images/icon-preview.svg" alt="" />
+          <h3 class="workflow__sub-header">Sneak preview</h3>
+          <p class="workflow__sub-header-copy copy-200">
+            Quick preview of all snippets on your Clipboard for easy access.
+          </p>
+        </div>
       </div>
     </section>
     <div class="companies">
@@ -114,8 +120,10 @@
 
     <footer class="footer">
       <div class="footer__content">
-        <div><img src="/images/logo.svg" alt="Clipboard logo" /></div>
-        <div>
+        <div class="footer__logo">
+          <img src="/images/logo.svg" alt="Clipboard logo" />
+        </div>
+        <div class="footer__nav">
           <ul>
             <li>FAQs</li>
             <li>Contact Us</li>
@@ -124,7 +132,7 @@
             <li>Install Guide</li>
           </ul>
         </div>
-        <div>
+        <div class="footer__social-icons">
           <ul>
             <li><i class="fa-brands fa-facebook"></i></li>
             <li><i class="fa-brands fa-twitter"></i></li>
@@ -132,11 +140,11 @@
           </ul>
         </div>
       </div>
-      <p class="attribution">
+      <p class="footer__attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="https://github.com/neenreva">neenreva</a>.
       </p>
     </footer>
   </body>

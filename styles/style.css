@@ -55,7 +55,7 @@ html {
 }
 
 body {
-  padding: 2.8rem;
+  padding: 3rem;
   background-image: url(../images/bg-header-mobile.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -66,28 +66,28 @@ h2,
 h3 {
   font-weight: 600;
   padding-block: 1.8rem;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.15px;
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 2.1rem;
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .copy-200,
 .copy-400,
 .copy-600 {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: hsl(201deg, 11%, 66%);
   letter-spacing: 0.15px;
-  line-height: 1.8rem;
+  line-height: 2rem;
   padding-block: 1.8rem;
 }
 
@@ -97,11 +97,12 @@ h3 {
   margin: 0.9rem 0rem;
   padding: 1.5rem;
   color: white;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
   border: none;
-  border-radius: 5.4rem;
+  border-radius: 6rem;
   box-shadow: -10px 10px 20px hsl(201deg, 11%, 66%);
+  cursor: pointer;
 }
 
 .dl-link-ios {
@@ -116,7 +117,6 @@ header,
 .snippets,
 .access,
 .workflow,
-.companies,
 .clipboard,
 footer {
   padding-block: 5rem;
@@ -124,15 +124,78 @@ footer {
 
 .snippets__img img {
   width: 100%;
-  padding-block: 1.8rem;
+  padding-block: 2rem;
 }
 
-@media (min-width: 800px) {
+.access img {
+  width: 100%;
+  padding-block: 2rem;
+}
+
+.workflow__examples {
+  padding-block: 2rem;
+}
+.workflow__example {
+  padding-block: 2rem;
+}
+
+.companies {
+  padding-block: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.companies img {
+  width: 50%;
+  padding-block: 3rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__logo img {
+  width: 30%;
+  padding-block: 2rem;
+}
+.footer__nav li {
+  padding-block: 2rem;
+  font-size: 1.6rem;
+}
+.footer__nav li:hover {
+  cursor: pointer;
+  color: hsl(171deg, 66%, 44%);
+}
+.footer__social-icons ul {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.footer__social-icons ul li i {
+  font-size: 2.5rem;
+  width: 10rem;
+  padding-block: 2rem;
+  cursor: pointer;
+}
+.footer__social-icons ul li i:hover {
+  color: hsl(171deg, 66%, 44%);
+}
+.footer__attribution a {
+  text-decoration: none;
+  color: hsl(233deg, 100%, 69%);
+}
+.footer__attribution a:hover {
+  color: hsl(171deg, 66%, 44%);
+}
+
+@media (min-width: 1000px) {
   body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0rem 15rem;
+    padding-block: 3rem 0;
+    padding-inline: min(15rem, 11vw);
     background-image: url(../images/bg-header-desktop.png);
   }
 
@@ -178,8 +241,15 @@ footer {
     padding: 2rem 3rem;
   }
 
+  header,
+.access,
+.snippets__copy,
+.clipboard,
+.footer__content {
+    padding-inline: min(22rem, 14vw);
+  }
+
   header {
-    padding-inline: 22rem;
     width: 100%;
   }
   header img {
@@ -187,6 +257,68 @@ footer {
   }
 
   .snippets__info {
+    text-align: left;
     display: flex;
+  }
+  .snippets__img img {
+    width: 135%;
+    margin-left: -35%;
+    padding-block: 2.4rem;
+  }
+  .snippets__bullets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: min(6rem, 5vw);
+  }
+
+  .workflow__examples {
+    display: flex;
+    justify-content: space-between;
+  }
+  .workflow__examples div {
+    width: 31%;
+  }
+  .workflow__examples div h3 {
+    text-align: center;
+  }
+
+  .companies {
+    flex-direction: row;
+  }
+  .companies img {
+    width: 50%;
+    padding-inline: 4.4rem;
+  }
+
+  .footer {
+    padding: 1rem;
+    background-color: hsl(201deg, 11%, 66%);
+    width: 100vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .footer__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+    margin-left: -15rem;
+  }
+  .footer__nav ul li {
+    padding: 1rem;
+  }
+  .footer__social-icons ul li i {
+    font-size: 2.4rem;
+    width: 5rem;
+  }
+  .footer__attribution {
+    padding-block: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
